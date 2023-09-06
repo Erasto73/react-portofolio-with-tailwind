@@ -17,6 +17,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import { Footer } from "../pages/footer";
 //@refresh reset
+/* eslint-disable */
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -41,7 +42,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  target='_blank' href='https://drive.google.com/uc?id=1fB4-Jx9N7UdYVMM-2s_qLn5Pc00w9v91'
+                  target='_blank' rel="noreferrer" href='https://drive.google.com/uc?id=1fB4-Jx9N7UdYVMM-2s_qLn5Pc00w9v91'
                 >
                   Resume
                 </a>
@@ -62,12 +63,12 @@ export default function Home() {
               React, Next frame work and Tailwind CSS.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a target=' _blank' href='https://twitter.com/ekasuguru'><AiFillTwitterCircle /></a>
-              <a target=' _blank' href='https://www.linkedin.com/in/erasto-m-kasuguru-11058a25/'><AiFillLinkedin /></a>
-              <a target=' _blank' href='https://instagram.com/erastokasuguru?igshid=ZGUzMzM3NWJiOQ=='><AiFillInstagram /></a>
+              <a target=' _blank'rel="noreferrer" href='https://twitter.com/ekasuguru'><AiFillTwitterCircle /></a>
+              <a target=' _blank' rel="noreferrer" href='https://www.linkedin.com/in/erasto-m-kasuguru-11058a25/'><AiFillLinkedin /></a>
+              <a target=' _blank' rel="noreferrer" href='https://instagram.com/erastokasuguru?igshid=ZGUzMzM3NWJiOQ=='><AiFillInstagram /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={deved} alt = "deved" layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -85,7 +86,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} alt = "design" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
@@ -95,7 +96,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} alt = "code" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
@@ -106,7 +107,7 @@ export default function Home() {
 
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={consulting} alt = "consulting" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
@@ -127,18 +128,18 @@ export default function Home() {
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                 Some of projects I developed at defferent time includes:
               </p>
-                <h3> <a target=' _blank' href='https://signaxcom-birthday-project.netlify.app/'>
+                <h3> <a target=' _blank' rel="noreferrer" href='https://signaxcom-birthday-project.netlify.app/'>
                  <span className="text-teal-500"> Birthday-app </span></a></h3>
                  <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200" >
                   Birthday app display list of friends with birthday at particular day from database with image and age. 
                  </p>
-                <h3> <a target=' _blank' href='https://next-events-teal.vercel.app/'>
+                <h3> <a target=' _blank' rel="noreferrer" href='https://next-events-teal.vercel.app/'>
                 <span className="text-teal-500"> Events web app </span></a></h3> 
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                  Event web app enable people to search for events available in Eroupe this year and 
                  get the opportunity to select and register for the event and get more informations.
                 </p>
-                <h3> <a target=' _blank' href='https://next-quiz-app-zeta.vercel.app/quiz'>
+                <h3> <a target=' _blank' rel="noreferrer" href='https://next-quiz-app-zeta.vercel.app/quiz'>
                 <span className="text-teal-500"> Quiz app </span></a></h3> 
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                  Quiz app allow you to participate to answer questions and at the end get the total
@@ -147,33 +148,33 @@ export default function Home() {
            </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className="basis-1/3 flex-1 ">
-                <a target=' _blank' href='https://signaxcom-birthday-project.netlify.app/'>
+                <a target=' _blank' rel="noreferrer" href='https://signaxcom-birthday-project.netlify.app/'>
                   <Image
                     className="rounded-lg object-cover"
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web1} />
+                    src={web1} alt = "web1" />
                 </a>
               </div>
               <div className="basis-1/3 flex-1">
-                <a target=' _blank' href='https://next-events-teal.vercel.app/'>
+                <a target=' _blank' rel="noreferrer" href='https://next-events-teal.vercel.app/'>
                   <Image
                     className="rounded-lg object-cover"
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web2} />
+                    src={web2} alt = "web2" />
                 </a>
               </div>
               <div className="basis-1/3 flex-1">
-               <a target=' _blank' href='https://next-quiz-app-zeta.vercel.app/quiz'>
+               <a target=' _blank'rel="noreferrer" href='https://next-quiz-app-zeta.vercel.app/quiz'>
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web3} />
+                  src={web3} alt = "web3" />
               </a>
               </div>
               <div className="basis-1/3 flex-1">
@@ -182,7 +183,7 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web4} />
+                  src={web4} alt = "web4" />
               </div>
             </div>
           </section></>
